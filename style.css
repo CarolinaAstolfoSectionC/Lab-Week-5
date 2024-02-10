@@ -43,7 +43,7 @@ container {
     font-size: 4vm;
 }
 
-row1 {
+.row1 {
     display: grid;
     margin-left: auto;
     margin-right: auto;
@@ -55,7 +55,7 @@ row1 {
        
 }
 
-row2 {
+.row2 {
     display: grid;
     margin-left: auto;
     margin-right: auto;
@@ -81,7 +81,7 @@ nav {
     font-size:4vm;
 }
 
-nav.sticky {
+.nav.sticky {
     position: sticky;
     top: 1%;
 }
@@ -110,8 +110,9 @@ td {
     white-space: nowrap;
 }
 
-navleft {
-    padding: 1%;
+.navleft {
+    padding: 2%;
+    margin: 1%;
 }
 
 }
@@ -122,10 +123,12 @@ navleft {
     }
 
     
-card {
+.card {
     box-shadow: 0 4px 8px 0 black;
     transition: 0.3s;
     justify-content: center;
+    padding: 1%;
+    position: relative;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(253,187,45,1);
@@ -159,9 +162,9 @@ row1 {
         font-size:4vm;
     }
     
-    nav.sticky {
+    .sticky {
         position: sticky;
-        top: 1%;
+        top: 0%;
     }
     
     h1 {
@@ -182,5 +185,9 @@ row1 {
     td {
         white-space: nowrap;
     }
+}
+
+section {
+    padding: 2%;
 }
 

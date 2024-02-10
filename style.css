@@ -7,40 +7,34 @@
 .img {
         aspect-ratio: 3/2;
         
-    }
-
-.figure {
-position: relative;
-    max-width: 100%;
-}
-
-.figure .img-hover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity .2s;
-}
-
-.figure:hover .img-hover {
-    opacity: 1;
 }
     
 .card {
     box-shadow: 0 2px 4px 0 grey;
     transition: 0.3s;
     justify-content: center;
-}
-
-a {
-    text-decoration: none;
+    padding: 1%;
+    position: relative;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(253,187,45,1);
+}
+
+.card img:last-child {
+    display: none;  
+}
+
+.card:hover img:last-child {
+    display: block;  
+}
+
+.card:hover img:first-child {
+    display: none;  
+}
+
+a {
+    text-decoration: none;
 }
 
 container {
@@ -104,7 +98,7 @@ h2 {
 }
 
 h5:hover {
-    background-color: rgba(253,187,45,1);
+    background-color: rgba(34,193,195,1);
 }
 
 table {

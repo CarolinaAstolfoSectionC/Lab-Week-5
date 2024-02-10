@@ -1,124 +1,174 @@
 * {
     font-family: 'Inconsolata', monospace;
+    font-size: clamp(1rem, 3vw, 1rem);
 }
-
-@media screen and (max-width: 1920px){
-
-.img {
-        aspect-ratio: 3/2;
-        
-}
-    
-.card {
-    box-shadow: 0 2px 4px 0 grey;
-    transition: 0.3s;
-    justify-content: center;
-    padding: 1%;
-    position: relative;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(253,187,45,1);
-}
-
-.card img:last-child {
-    display: none;  
-}
-
-.card:hover img:last-child {
-    display: block;  
-}
-
-.card:hover img:first-child {
-    display: none;  
-}
-
-a {
-    text-decoration: none;
-}
-
-container {
-    padding: 3%;
-    text-align: center;
-    font-size: 4vm;
-}
-
-.row1 {
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: 30% 30% 30%;
-    gap: 5%;
-    width: 50%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-       
-}
-
-.row2 {
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: auto auto auto;
-    gap: 3%;
-    width: 90%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    
-}
-
 
 body {
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
-td:hover {
-    background-color: rgb(34,193,195);
+@media screen and (max-width: 1920px) {
+
+    .image {
+        aspect-ratio: 3/2;
+        position: absolute;
+
+    }
+
+    .image-bot {
+        display: block;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+    }
+
+    .card {
+        box-shadow: 0 2px 4px 0 grey;
+        transition: 0.3s;
+        justify-content: center;
+        padding: 1%;
+        position: relative;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(253, 187, 45, 1);
+    }
+
+    .card .image-hover {
+        display: none;
+    }
+
+    .card:hover .image-hover {
+        display: block;
+    }
+
+    .card:hover .image-main {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 3%;
+    }
+
+    .row1 {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 30% 30% 30%;
+        gap: 5%;
+        width: 60%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+
+    }
+
+    .row2 {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto auto auto;
+        gap: 3%;
+        width: 90%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        align-items: center;
+
+    }
+
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 3%;
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(3rem, 5vw, 1rem);
+    }
+
+    h2 {
+        text-align: center;
+        padding: 2%;
+        font-size: clamp(2rem, 3vw, 1rem);
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    h6 {
+        padding: 2%;
+        margin: 1%;
+        font-family: 'Sixtyfour', sans-serif;
+        width: 20%;
+    }
+
+    h5:hover {
+        background-color: rgba(34, 193, 195, 1);
+    }
+
+    table {
+        text-align: center;
+        float: right;
+        width: 20%;
+        top: 0;
+    }
+
+    td {
+        white-space: nowrap;
+    }
+
+    td:hover {
+        background-color: rgb(34, 193, 195);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
 }
 
-nav {
-    font-size:4vm;
-}
-
-.nav.sticky {
-    position: sticky;
-    top: 1%;
-}
-
-h1 {
-    text-align: center;
-    font-size:10vm;
-    padding: 1%;
-}
-h2 {
-    text-align: center;
-    padding: 2%;
-    font-size:8vm;
-}
-
-h5:hover {
-    background-color: rgba(34,193,195,1);
-}
-
-table {
-    text-align: center;
-    float: right;
-    width: 20%;
-}
-td {
-    white-space: nowrap;
-}
-
-.navleft {
-    padding: 2%;
-    margin: 1%;
-}
-
-}
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .img {
         aspect-ratio: 3/2;
     }
 
+
+    .row1 {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2 35% 35%);
+        gap: 5%;
+        width: 90%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+
+    }
+
+    .row2 {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto;
+        gap: 3%;
+        width: 90%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
+}

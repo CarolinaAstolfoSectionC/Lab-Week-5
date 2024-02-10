@@ -1,0 +1,192 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+@media screen and (max-width: 1920px){
+
+.img {
+        aspect-ratio: 3/2;
+        
+    }
+
+.figure {
+position: relative;
+    max-width: 100%;
+}
+
+.figure .img-hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.figure:hover .img-hover {
+    opacity: 1;
+}
+    
+.card {
+    box-shadow: 0 2px 4px 0 grey;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(253,187,45,1);
+}
+
+container {
+    padding: 3%;
+    text-align: center;
+    font-size: 4vm;
+}
+
+row1 {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+       
+}
+
+row2 {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto;
+    gap: 3%;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+td:hover {
+    background-color: rgb(34,193,195);
+}
+
+nav {
+    font-size:4vm;
+}
+
+nav.sticky {
+    position: sticky;
+    top: 1%;
+}
+
+h1 {
+    text-align: center;
+    font-size:10vm;
+    padding: 1%;
+}
+h2 {
+    text-align: center;
+    padding: 2%;
+    font-size:8vm;
+}
+
+h5:hover {
+    background-color: rgba(253,187,45,1);
+}
+
+table {
+    text-align: center;
+    float: right;
+    width: 20%;
+}
+td {
+    white-space: nowrap;
+}
+
+navleft {
+    padding: 1%;
+}
+
+}
+
+@media screen and (max-width: 768px){
+    .img {
+        aspect-ratio: 3/2;
+    }
+
+    
+card {
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+    justify-content: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(253,187,45,1);
+}
+
+container {
+    padding: 3%;
+    text-align: center;
+    font-size: 4vm;
+}
+row1 {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 40% 40%;
+        gap: 5%;
+        width: 100%;
+        margin-top: 2%;
+        
+    }
+    body {
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    }
+    
+    td:hover {
+        background-color: rgb(34,193,195);
+    }
+    
+    nav {
+        font-size:4vm;
+    }
+    
+    nav.sticky {
+        position: sticky;
+        top: 1%;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size:10vm;
+    }
+    h2 {
+        text-align: center;
+        padding: 2%;
+        font-size:8vm;
+    }
+    
+    table {
+        text-align: center;
+        float: right;
+        width: 25%;
+    }
+    td {
+        white-space: nowrap;
+    }
+}
+

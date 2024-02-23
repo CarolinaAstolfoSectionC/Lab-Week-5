@@ -81,6 +81,12 @@ body {
 
     }
 
+    header {
+        position: sticky;
+        top: 0;
+
+    }
+
     nav {
         position: -webkit-sticky;
         position: sticky;
@@ -111,6 +117,7 @@ body {
         margin: 1%;
         font-family: 'Sixtyfour', sans-serif;
         width: 20%;
+        display: inline-block;
     }
 
     h5:hover {
@@ -122,6 +129,8 @@ body {
         float: right;
         width: 20%;
         top: 0;
+        margin-top: 3%;
+        
     }
 
     td {
